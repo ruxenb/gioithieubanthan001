@@ -1,0 +1,82 @@
+body { 
+    margin: 0; 
+    font-family: Segoe UI, Helvetica, Arial, sans-serif; 
+    background-color: #f0f2f5; 
+    color: #1c1e21; 
+}
+a { text-decoration: none; color: inherit; }
+
+.container { max-width: 940px; margin: 0 auto; }
+
+.profile-header { 
+    background: #fff; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+    padding-bottom: 20px; 
+}
+.cover-photo { 
+    width: 100%; 
+    height: 350px; 
+    background-color: #ccc; 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+    background-image: url(img/IMG_20260318_171328.webp); 
+    background-size: cover; 
+    background-position: center; 
+}
+.profile-info { display: flex; align-items: flex-end; padding: 0 30px; margin-top: -30px; }
+.profile-pic { 
+    width: 168px; 
+    height: 168px; 
+    border-radius: 50%; 
+    border: 4px solid #fff; 
+    background-color: #fff; 
+    background-image: url(img/anhcuatao.jpeg); 
+    background-size: cover; 
+    z-index: 1; 
+}
+.profile-name { margin-left: 20px; padding-bottom: 20px; }
+.profile-name h1 { margin: 0; font-size: 32px; }
+.profile-name p { margin: 5px 0 0 0; color: #65676b; font-weight: 600; }
+
+.profile-nav { display: flex; border-top: 1px solid #ccc; margin: 20px 30px 0; padding-top: 5px; }
+.profile-nav a { padding: 15px; color: #65676b; font-weight: 600; border-radius: 5px; transition: 0.2s; }
+.profile-nav a:hover { background-color: #f2f2f2; }
+.profile-nav a.active { color: #1877f2; border-bottom: 3px solid #1877f2; border-radius: 0; }
+
+.main-content { display: flex; gap: 15px; margin-top: 15px; padding: 0 15px; }
+.left-col { flex: 1; }
+.right-col { flex: 1.5; }
+
+.card { 
+    background: #fff; 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+}
+.card h2 { font-size: 20px; margin-top: 0; margin-bottom: 15px; }
+
+.intro-item { display: flex; align-items: center; margin-bottom: 12px; color: #050505; }
+.intro-item span { margin-left: 10px; }
+
+.post-header { display: flex; align-items: center; margin-bottom: 10px; }
+.post-avatar { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #ccc; 
+    margin-right: 10px; 
+    background-image: url(img/anhcuatao.jpeg);
+    background-size: cover;
+}
+.post-time { font-size: 13px; color: #65676b; }
+.post-content { line-height: 1.5; font-size: 15px; }
+
+@media (max-width: 768px) {
+    .main-content { flex-direction: column; }
+    .profile-info { flex-direction: column; align-items: center; text-align: center; margin-top: -84px; }
+    .profile-name { margin-left: 0; padding-bottom: 10px; }
+    .profile-nav { flex-wrap: wrap; justify-content: center; }
+}
